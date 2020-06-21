@@ -1,9 +1,9 @@
 
 [
 { "city":[
-  {"cityName": "Dublin", "id":1, "cityImageimg":"assets/img/dublin.jpg", "country":"Ireland"},
-  {"cityName": "London", "id":2, "cityImageimg":"assets/img/london.jpg", "country":"United Kingdom"},
-  {"cityName": "Berlin", "id":3, "cityImageimg":"assets/img/berlin.jpg", "country":"Germany"},
+  {"Name": "Dublin", "id":1, "cityImageimg":"assets/img/dublin.jpg", "country":"Ireland"},
+  {"Name": "London", "id":2, "cityImageimg":"assets/img/london.jpg", "country":"United Kingdom"},
+  {"Name": "Berlin", "id":3, "cityImageimg":"assets/img/berlin.jpg", "country":"Germany"},
   {"cityName": "Paris", "id":4, "cityImageimg":"assets/img/paris.jpg", "country":"France"},
   {"cityName": "Milan", "id":5, "cityImageimg":"assets/img/milan.jpg", "country":"Italy"}
   ]}
