@@ -1,21 +1,135 @@
-body{
+/*--------------------------------------------------------------------------------------------------body*/
+body {
+  font-family: sans-serif;
+  background-color: white;
+  color: orange;
+  padding: 0px 0 28px 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*---------------------------------------------------------------------------------------------Hero Image-*/
+#hero-image{
+    background-image: url("../img/beach.jpg");
+    height: 800px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#sunset-btn{
+    float: right;
+}
+
+
+#sunset-image{
+    background-image: url("../img/sunset.jpg");
+    height: 800px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--------------------------------------------------------------------------------------------Hotel Flight*/
+.hotel-image{
+    background-image: url("../img/hotel.jpg");
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    border: orange dotted 1px;
+    text-align: center;
     margin: 0 auto;
-    padding: 0 auto;
+    overflow: hidden;
+    background-position: bottom center;
 }
 
-
-
-.tile{
-    border: orange solid 5px;;
-    height: 150px;
-    border-radius: 10px;
-    max-width: 150px;
-    display: inline-block;
-    padding: 60px;
-    margin: 60px;
+.flight-image{
+    background-image: url("../img/flight.jpg");
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    border: orange dotted 1px;
+    text-align: center;
+    margin: 0 auto;
+    background-position: center center;
+    overflow: hidden;
+    background-repeat: no-repeat;   
 }
 
-img{
-    width: 100%;
-    height: 100%;
+/*-----------------------------------------------------------------------------------------------------------Parralax midpoint*/
+
+#parallax-midpoint{
+    background-image:url("../img/beach2.jpg");
+    height: 500px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ } 
+ #parallax-midpoint h2{
+     text-align: center;
+     font-weight: 300;
+ }
+
+.app-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.6rem;
+}
+
+.cityTemplate {
+  max-width: 650px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.cityTemplate h4 {
+  margin: 0 0 6px 0;
+}
+
+.city-photo {
+  float: left;
+  width: 40%;
+  margin-right: 15px;
+}
+
+.city-name {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+
+.country {
+  font-size: 0.9rem;
+  color: #888;
+  vertical-align: middle;
+}
+
+.attractions {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 17px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer {
+  font-size: 0.7rem;
+  color: #888;
+  text-align: center;
+  margin: 0;
 }
