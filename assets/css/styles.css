@@ -39,6 +39,10 @@ img {
     background-size: cover;
 }
 
+h5.light-switch{
+    margin-top:  auto;
+    
+}
 /*--------------------------------------------------------------------------------------------Hotel Flight*/
 .hotel-image{
     background-image: url("../img/hotel.jpg");
