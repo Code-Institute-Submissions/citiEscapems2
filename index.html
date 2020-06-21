@@ -9,23 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-<style>
-    th{ 
-        color:#fff;
-            }
-</style>
 
 
-<table class="table table-striped">
-    <tr  class="bg-info">
-        <th>Name</th>
-        <th>Age</th>
-        <th>Birthday</th>
-    </tr>
 
-    <tbody id="myTile">
+
+
+    <div id="myTile">
         
-    </tbody>
+    </div>
 </table>
 
 <script>
@@ -48,16 +39,12 @@
 		for (var i = 0; i < data.length; i++){
 			var tile = `<div class="tile">
                             <li>
+                            <img src="${data[i].age}" alt="city name" />
 							<h3>${data[i].name}</h3>
-							<img src="${data[i].age}" alt="city name" />
 							<div>${data[i].birthdate}</div>
 					  </li>
                       </div>`
 			table.innerHTML += tile
-
-            
-
-
 		}
 	}
 </script>
