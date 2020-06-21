@@ -3,12 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
-    <p>This is a test</p>
+<style>
+    th{ 
+        color:#fff;
+            }
+</style>
+
+
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th>Name</th>
+        <th>Age</th>
+        <th>Birthday</th>
+    </tr>
+
+    <tbody id="myTile">
+        
+    </tbody>
+</table>
+
+<script>
+	var myArray = [
+	    {'name':'Michael', 'age':'assets/img/dublin.jpg', 'birthdate':'11/10/1989'},
+	    {'name':'Mila', 'age':'32', 'birthdate':'10/1/1989'},
+	    {'name':'Paul', 'age':'29', 'birthdate':'10/14/1990'},
+	    {'name':'Dennis', 'age':'25', 'birthdate':'11/29/1993'},
+	    {'name':'Tim', 'age':'27', 'birthdate':'3/12/1991'},
+	    {'name':'Erik', 'age':'24', 'birthdate':'10/31/1995'},
+	]
+	
+	cityTile(myArray)
+
+
+
+	function cityTile(data){
+		var table = document.getElementById('myTile')
+
+		for (var i = 0; i < data.length; i++){
+			var tile = `<div class="tile">
+                            <li>
+							<h3>${data[i].name}</h3>
+							<img src="${data[i].age}" alt="city name" />
+							<div>${data[i].birthdate}</div>
+					  </li>
+                      </div>`
+			table.innerHTML += tile
+
+            
+
+
+		}
+	}
+</script>
 
 
 
