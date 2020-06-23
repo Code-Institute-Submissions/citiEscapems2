@@ -1,221 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <script src="assets/js/map.js" type="javascript/text"></script>
+    <script
+      src="https://kit.fontawesome.com/1c8e9a527c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-    <script src="https://kit.fontawesome.com/1c8e9a527c.js" crossorigin="anonymous"></script>
-	<title>Document</title>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">CitiEscape</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Car Rental</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item map-li">
+            <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <button type="button" class="btn btn-primary" id="sunset-btn">
+            <i class="fas fa-sun"></i>Sunset Mode<i class="fas fa-sun"></i>
+          </button>
+          <h5 class="light-switch">OFF</h5>
+        </ul>
+      </div>
+    </nav>
+    <!------------------------------------------------------------------------------------------------------------------------Hero Image-->
+    <div id="hero-image">
+      <div class="row h-100">
+        <div class="col-md-12 align-self-center">
+          <h1 class="about-h1 text-center text-focus-in">
+            Book your trip now!
+          </h1>
+        </div>
+        <div class="container main-container">
+          <div id="inside-content">
+            <div
+              data-skyscanner-widget="MultiVerticalWidget"
+              data-locale="en-GB"
+              data-market="IRE"
+              data-currency="EUR"
+              data-origin-name="'Dublin'"
+              data-font-colour="#000000"
+              data-button-colour="#007BFF"
+              data-multi-city-max-flights-number="6"
+              data-responsive="false"
+            ></div>
+            <script
+              src="https://widgets.skyscanner.net/widget-server/js/loader.js"
+              async
+            ></script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------flight and hotel-->
+    <div class="container flightandhotel">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="flight-image"></div>
+          <h3 class="h3-logo">Flights <i class="fas fa-plane"></i></h3>
+          <p class="para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            lectus sem, varius tempor ligula cursus, egestas aliquam diam.
+            Phasellus nulla quam, tincidunt et tempus nec, dapibus vel lacus.
+            Aliquam fringilla tempus ante sed ultricies. Pellentesque finibus
+            egestas erat quis venenatis. Vivamus aliquet velit non rhoncus
+            pulvinar.
+          </p>
+        </div>
 
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		<a class="navbar-brand" href="#">CitiEscape</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Flights</a>
+        <div class="col-sm-12 col-md-6">
+          <div class="hotel-image"></div>
+          <h3 class="h3-logo">Hotels <i class="fas fa-hotel"></i></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            tincidunt commodo magna vel convallis. Proin maximus, risus
+            fringilla semper consectetur, neque turpis sollicitudin elit, at
+            porta dui odio sit amet risus. Donec ut aliquet est. Vestibulum quam
+            augue, facilisis blandit blandit a, lobortis ac nibh. In hac
+            habitasse platea dictumst.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------Parallax breakpoint-->
+    <div id="parallax-midpoint">
+      <div class="row h-100">
+        <div class="col-md-12 align-self-center">
+          <h2>Where do you want to go?</h2>
+          <div class="container main-container"></div>
+        </div>
+      </div>
+    </div>
 
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Hotels</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Packages</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Car Rental</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
-				</li>
-				<li class="nav-item map-li">
-					<a class="nav-link" href="map.html">Map</a>
-				</li>
-				<button type="button" class="btn btn-primary" id="sunset-btn"><i class="fas fa-sun"></i>Sunset Mode<i class="fas fa-sun"></i></button>
-                <h5 class="light-switch">OFF</h5>
-			</ul>
-		</div>
-	</nav>
-	<!------------------------------------------------------------------------------------------------------------------------Hero Image-->
-	<div id="hero-image">
-		<div class="row h-100">
-			<div class="col-md-12 align-self-center">
-				<h1 class="about-h1 text-center text-focus-in">Book your trip now!</h1>
-				
-			</div>
-            <div class="container main-container">
-					<div id="inside-content">
-						<div data-skyscanner-widget="MultiVerticalWidget" data-locale="en-GB" data-market="IRE"
-							data-currency="EUR" data-origin-name="'Dublin'" data-font-colour="#000000"
-							data-button-colour="#007BFF" data-multi-city-max-flights-number="6" data-responsive="false">
-						</div>
-						<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
-					</div>
-				</div>
-		</div>
-	</div>
-	<!---------------------------------------------------------------------------------------------------------flight and hotel-->
-	<div class="container flightandhotel">
-		<div class="row">
-			<div class="col-sm-12 col-md-6">
-				<div class="flight-image">
-				</div>
-				<h3 class="h3-logo">Flights <i class="fas fa-plane"></i></h3>
-				<p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus sem, varius
-					tempor ligula
-					cursus,
-					egestas aliquam diam. Phasellus nulla quam, tincidunt et tempus nec, dapibus vel lacus. Aliquam
-					fringilla
-					tempus ante sed ultricies. Pellentesque finibus egestas erat quis venenatis. Vivamus aliquet velit
-					non
-					rhoncus pulvinar.
-				</p>
-				
-			</div>
+    <!-----------------------------------------------------------------------------------------------------------------------------Tile top citys-->
+    <h3>Top city break destinations!</h3>
+    <div id="myTile"></div>
 
-			<div class="col-sm-12 col-md-6">
-				<div class="hotel-image">
-				</div>
-				<h3 class="h3-logo">Hotels <i class="fas fa-hotel"></i></h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt commodo magna vel
-					convallis.
-					Proin maximus, risus fringilla semper consectetur, neque turpis sollicitudin elit, at porta dui odio
-					sit
-					amet risus. Donec ut aliquet est. Vestibulum quam augue, facilisis blandit blandit a, lobortis ac
-					nibh. In
-					hac habitasse platea dictumst.
-				</p>
-			</div>
+    <!-------------------------------------------------------------------------------------------------------------------------Map-->
 
+    <div id="map"></div>
 
-		</div>
-	</div>
-	<!-------------------------------------------------------------------------------------------------------------------Parallax breakpoint-->
-	<div id="parallax-midpoint">
-		<div class="row h-100">
-			<div class="col-md-12 align-self-center">
-				<h2>Where do you want to go?</h2>
-				<div class="container main-container">
-				</div>
-			</div>
-		</div>
-	</div>
+    <!--------------------------------------------------------------------------------------------------------------------------Footer Content-->
 
-<!-----------------------------------------------------------------------------------------------------------------------------Tile top citys-->
-	<h3>Top city break destinations!</h3>
-    
-    <div id="myTile">
-	</div>
-<div class="footer-hr">
-</div>
-	<footer class="page-footer font-small blue pt-4">
+    <div class="footer-hr"></div>
+    <footer class="page-footer font-small blue pt-4">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase">CitiEscape</h5>
+            <p>
+              A way to plan your travels and find the best city to suit you!
+            </p>
+          </div>
+          <!-- Grid column -->
 
-		<!-- Footer Links -->
-		<div class="container-fluid text-center text-md-left">
+          <hr class="clearfix w-100 d-md-none pb-3" />
 
-			<!-- Grid row -->
-			<div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Search</h5>
 
-				<!-- Grid column -->
-				<div class="col-md-6 mt-md-0 mt-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Flights</a>
+              </li>
+              <li>
+                <a href="#!">Hotels</a>
+              </li>
+              <li>
+                <a href="#!">Packages</a>
+              </li>
+              <li>
+                <a href="#!">Car Rental</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
 
-					<!-- Content -->
-					<h5 class="text-uppercase">CitiEscape</h5>
-					<p>A way to plan your travels and find the best city to suit you!</p>
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Our Resources</h5>
 
-				</div>
-				<!-- Grid column -->
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#!">About</a>
+              </li>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+              <li>
+                <a href="#!">Privacy Statement</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
 
-				<hr class="clearfix w-100 d-md-none pb-3">
-
-				<!-- Grid column -->
-				<div class="col-md-3 mb-md-0 mb-3">
-
-					<!-- Links -->
-					<h5 class="text-uppercase">Search</h5>
-
-					<ul class="list-unstyled">
-						<li>
-							<a href="#!">Flights</a>
-						</li>
-						<li>
-							<a href="#!">Hotels</a>
-						</li>
-						<li>
-							<a href="#!">Packages</a>
-						</li>
-						<li>
-							<a href="#!">Car Rental</a>
-						</li>
-					</ul>
-
-				</div>
-				<!-- Grid column -->
-
-				<!-- Grid column -->
-				<div class="col-md-3 mb-md-0 mb-3">
-
-					<!-- Links -->
-					<h5 class="text-uppercase">Our Resources</h5>
-
-					<ul class="list-unstyled">
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="#!">About</a>
-						</li>
-						<li>
-							<a href="#!">Contact Us</a>
-						</li>
-						<li>
-							<a href="#!">Privacy Statement</a>
-						</li>
-					</ul>
-
-				</div>
-				<!-- Grid column -->
-
-			</div>
-			<!-- Grid row -->
-
-		</div>
-		<!-- Footer Links -->
-
-		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© 2020 Copyright:
-			<a href="#"> BigBushman</a>
-		</div>
-		<!-- Copyright -->
-
-	</footer>
-	<!-- Footer -->
-
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.js"
-		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	<script src="/assets/js/main.js"></script>
-</body>
-
-</html>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="#"> BigBushman</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+ 
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/maps.js" type="javascript/text"></script>
+       <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ5TSon_TZovw3hBPkm_INE1VsmUvDXeY&callback=initMap"></script>
+  </body>
+</html> 
