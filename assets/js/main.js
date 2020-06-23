@@ -1,11 +1,13 @@
 
 	var myCity = [
 	    {'name':'Dublin', 'img':'assets/img/dublin.jpg', 'country':'Ireland'},
-	    {'name':'Milan', 'age':'32', 'country':'Italy'},
-	    {'name':'Berlin', 'age':'29', 'country':'Germany'},
-	    {'name':'Paris', 'age':'25', 'country':'France'},
-	    {'name':'London', 'age':'27', 'country':'United Kingdom'},
-	    {'name':'Vienna', 'age':'24', 'country':'Austria'},
+	    {'name':'Milan', 'img':'assets/img/milan.jpg', 'country':'Italy'},
+	    {'name':'Berlin', 'img':'assets/img/berlin.jpg', 'country':'Germany'},
+	    {'name':'Paris', 'img':'assets/img/paris.jpg', 'country':'France'},
+	    {'name':'London', 'img':'assets/img/london.jpg', 'country':'United Kingdom'},
+        {'name':'Vienna', 'img':'assets/img/vienna.jpg', 'country':'Austria'},
+        {'name':'Prague', 'img':'assets/img/prague.jpg', 'country':'Czechia'},
+	    {'name':'Madrid', 'img':'assets/img/madrid.jpg', 'country':'Spain'},
 	]
 	
 	
@@ -16,15 +18,13 @@ cityTile(myCity)
 		var table = document.getElementById('myTile')
 
 		for (var i = 0; i < data.length; i++){
-			var tile = `<div class="row">
-                        <div class="col col-sm-12 col-md-6 col-lg-3>
-                            <li class="tile">
-                            <img src="${data[i].img}" alt="Picture of ${data[i].name}" />
+			var tile = `<li class="tile">
+                            <img class="tile-img" src="${data[i].img}" alt="Picture of ${data[i].name}" />
 							<h3>${data[i].name}</h3>
 							<div>${data[i].country}</div>
 					  </li>
                       </div>
-                      </div>`
+                      `
 			table.innerHTML += tile
 		}
     }

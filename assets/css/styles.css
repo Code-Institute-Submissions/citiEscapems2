@@ -104,15 +104,23 @@ div.container{
   overflow: hidden;
 }
 
+img.tile-img{
+    width: 400px;
+    border: orange solid 3px;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+img.tile-img:hover{
+    opacity: 0.8;
+}
+
+
+
 .cityTemplate h4 {
   margin: 0 0 6px 0;
 }
 
-.city-photo {
-  float: left;
-  width: 40%;
-  margin-right: 15px;
-}
 
 .city-name {
   font-size: 2rem;
