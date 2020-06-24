@@ -10,7 +10,7 @@
 	    {'name':'Madrid', 'img':'assets/img/madrid.jpg', 'country':'Spain'},
 	]
 	
-	
+const URL = "cities.json"	
 
 cityTile(myCity)
 
@@ -19,9 +19,9 @@ cityTile(myCity)
 
 		for (var i = 0; i < data.length; i++){
 			var tile = `<li class="tile">
-                            <img class="tile-img" src="${data[i].img}" alt="Picture of ${data[i].name}" />
-							<h3>${data[i].name}</h3>
-							<div>${data[i].country}</div>
+                            <a href="#"><img class="tile-img" src="${data[i].img}" alt="Picture of ${data[i].name}"/></a>
+							<h3 class="tile-city">${data[i].name}</h3>
+							<h5 class="tile-country">${data[i].country}</h5>
 					  </li>
                       </div>
                       `
@@ -32,8 +32,8 @@ cityTile(myCity)
      function initMap() {
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 3,
-    center: {lat: -28.024, lng: 140.887}
+    zoom: 4,
+    center: {lat: 47.3785, lng: 14.9706}
   });
 
   // Create an array of alphabetical characters used to label the markers.

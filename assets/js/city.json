@@ -1,6 +1,6 @@
 
 [
-{ "city":[
+{ "myCity":[
   {"Name": "Dublin", "id":1, "cityImageimg":"assets/img/dublin.jpg", "country":"Ireland"},
   {"Name": "London", "id":2, "cityImageimg":"assets/img/london.jpg", "country":"United Kingdom"},
   {"Name": "Berlin", "id":3, "cityImageimg":"assets/img/berlin.jpg", "country":"Germany"},
