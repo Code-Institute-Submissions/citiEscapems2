@@ -73,6 +73,12 @@ div.container{
     padding-top: 50px;
 }
 
+div.container.main-container{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    
+}
 /*-----------------------------------------------------------------------------------------------------------Parralax midpoint*/
 
 #parallax-midpoint{
@@ -209,3 +215,7 @@ ul, li{
 
 /*-----------------------------------------------------------------------------------------------MAP*/
 div#map {min-height: 360px;}
+
+element.style{
+    background-color: #007bff;
+}
