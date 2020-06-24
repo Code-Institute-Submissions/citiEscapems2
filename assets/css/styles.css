@@ -198,8 +198,14 @@ ul, li{
     list-style-type: none;
 }
 
-
-
+.contact-form{
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+.contact-us-h2{
+    text-align: center;
+    margin-top: 30px;
+}
 
 /*-----------------------------------------------------------------------------------------------MAP*/
 div#map {min-height: 360px;}
