@@ -33,7 +33,7 @@ cityTile(myCity)
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
-    center: {lat: 47.3785, lng: 14.9706}
+    center: {lat: 48.5785, lng: 14.9706}
   });
 
   // Create an array of alphabetical characters used to label the markers.
@@ -55,9 +55,14 @@ cityTile(myCity)
       {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 }
 var locations = [
-  {lat: -8.409518, lng: 115.0920},
-  {lat: -33.918861, lng: 18.423300},
-  {lat: 16.5004, lng: 151.7415}
+  {lat: 53.3498, lng: -6.2603},
+  {lat: 51.5074, lng: -0.1278},
+  {lat: 48.8566, lng: 2.3522},
+  {lat: 45.4642, lng: 9.1900},
+  {lat: 48.2082, lng: 16.3738},
+  {lat: 52.5200, lng: 13.4050},
+  {lat: 50.0755, lng: 14.4378},
+  {lat: 40.4168, lng: 3.37038}
   
 ]
     
