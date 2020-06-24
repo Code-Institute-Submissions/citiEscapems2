@@ -112,10 +112,10 @@ div.container.main-container{
 }
 
 img.tile-img{
-    width: 400px;
+    width: 350px;
     border: orange solid 3px;
     height: auto;
-    margin-left: 50px;
+    margin-left: 25px;
     border-radius: 10px;
 }
 img.tile-img:hover{
