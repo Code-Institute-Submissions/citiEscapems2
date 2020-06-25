@@ -80,14 +80,7 @@
 							<div>
 								<h3 class="contact-heading uppercase text-center">Contact us form</h3>
 							</div>
-							<div class="center-form">
-								<form onsubmit="return sendMail(this);">
-									<input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-									<input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-									<textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
-									<button type="submit" class="btn btn-secondary center-block">Submit Query</button>
-								</form>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -95,11 +88,11 @@
 		</div>
 	</div>
     <div class="container">
-<form class="needs-validation" novalidate>
+<form class="needs-validation" onsubmit="return sendMail(this);" novalidate>
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">First name:</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+      <input type="text" name="first" class="form-control" id="validationCustom01" placeholder="First name" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -109,7 +102,7 @@
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationCustom02">Last name:</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+      <input type="text" name="last" class="form-control" id="validationCustom02" placeholder="Last name" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -123,7 +116,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend"></span>
         </div>
-        <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+        <input type="email" name="email" class="form-control" id="validationCustomEmail" placeholder="Email" aria-describedby="inputGroupPrepend" required>
         <div class="valid-feedback">
         Looks good!
       </div>
@@ -136,7 +129,7 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom03">Phone Number:</label>
-      <input type="tel" class="form-control" id="validationCustom03" placeholder="Phone Number" required>
+      <input type="tel" name="phone" class="form-control" id="validationCustom03" placeholder="Phone Number" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -147,7 +140,7 @@
     
     <div class="form-group col-md-6">
       <label for="validationCustom04">Contact Reason:</label>
-      <select id="validationCustom04" class="form-control" required>
+      <select id="validationCustom04" class="form-control" name="contact" required>
         <option selected disabled value="">Choose a reason..</option>
         <option value="1">General Enquiry</option>
         <option value="2">Booking Information</option>
@@ -163,10 +156,10 @@
 
      <div class="form-group col-md-12">
     <label for="validationCustom05">Description:</label>
-    <textarea class="form-control" id="validationCustom05" placeholder="Please describe your query..." rows="5" required minlength=20></textarea>
-    <small class="form-text text-muted">Minimum of 50 characters required</small>
+    <textarea class="form-control" name="description" id="validationCustom05" placeholder="Please describe your query..." rows="5" required minlength=20></textarea>
+    <small class="form-text text-muted">Minimum of 20 characters required</small>
     <div class="invalid-feedback">
-          Please provide a detailed description explaining your issue. Must be at least 50 characters.
+          Please provide a detailed description explaining your issue. Must be at least 20 characters.
         </div>
   </div>
   </div>

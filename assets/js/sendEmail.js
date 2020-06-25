@@ -1,9 +1,13 @@
 
 function sendMail(contactForm) {
     emailjs.send("gmail", "milestone_projects", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
+        "from_first": contactForm.first.value,
+        "from_last": contactForm.last.value,
+        "from_email": contactForm.email.value,
+        "from_phone": contactForm.phone.value,
+        "from_contact_reason": contactForm.contact.value,
+        "description": contactForm.description.value
+
     })
     .then(
         function(response) {
@@ -16,4 +20,3 @@ function sendMail(contactForm) {
     return false;  // To block from loading a new page
     
 }
-$('#contactForm')[0].reset();
