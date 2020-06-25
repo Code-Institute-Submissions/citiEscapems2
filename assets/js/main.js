@@ -8,6 +8,8 @@
         {'name':'Vienna', 'img':'assets/img/vienna.jpg', 'country':'Austria'},
         {'name':'Prague', 'img':'assets/img/prague.jpg', 'country':'Czechia'},
 	    {'name':'Madrid', 'img':'assets/img/madrid.jpg', 'country':'Spain'},
+        {'name':'Amsterdam', 'img':'assets/img/amsterdam.jpg', 'country':'Holland'},
+        {'name':'Lisbon', 'img':'assets/img/lisbon.jpg', 'country':'Portugal'}
 	]
 	
 const URL = "cities.json"	
@@ -62,7 +64,9 @@ var locations = [
   {lat: 48.2082, lng: 16.3738},
   {lat: 52.5200, lng: 13.4050},
   {lat: 50.0755, lng: 14.4378},
-  {lat: 40.4168, lng: -3.7038}
+  {lat: 40.4168, lng: -3.7038},
+  {lat: 38.7223, lng: -9.1393},
+  {lat: 52.3667, lng: 4.8945}
   
 ]
     
