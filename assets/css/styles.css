@@ -14,8 +14,7 @@ img {
 
 /*---------------------------------------------------------------------------------------------Hero Image-*/
 #hero-image{
-    background-image: url("../img/hero.jpg");
-    
+    background-image: url("../img/hero-paris.jpg");
     height: 800px;
     margin-bottom: 50px;
     background-attachment: fixed;
@@ -43,32 +42,7 @@ h5.light-switch{
     margin-top:  auto;
     
 }
-/*--------------------------------------------------------------------------------------------Hotel Flight*/
-.hotel-image{
-    background-image: url("../img/hotel.jpg");
-    width:300px;
-    height: 300px;
-    border-radius: 50%;
-    border: orange dotted 1px;
-    text-align: center;
-    margin: 0 auto;
-    overflow: hidden;
-    background-position: bottom center;
-}
-
-.flight-image{
-    background-image: url("../img/flight.jpg");
-    width:300px;
-    height: 300px;
-    border-radius: 50%;
-    border: orange dotted 1px;
-    text-align: center;
-    margin: 0 auto;
-    background-position: center center;
-    overflow: hidden;
-    background-repeat: no-repeat;   
-}
-
+/*--------------------------------------------------------------------------------------------background overlay container*/
 div.container{
     padding-top: 50px;
 }
@@ -77,6 +51,7 @@ div.container.main-container{
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     margin-bottom: 100px;
+    margin-top: 100px;
     
 }
 /*-----------------------------------------------------------------------------------------------------------Parralax midpoint*/
@@ -115,7 +90,7 @@ img.tile-img{
     width: 350px;
     border: orange solid 3px;
     height: auto;
-    margin-left: 25px;
+    margin-left: 30px;
     border-radius: 10px;
 }
 img.tile-img:hover{
@@ -215,7 +190,11 @@ ul, li{
 }
 
 /*-----------------------------------------------------------------------------------------------MAP*/
-div#map {min-height: 360px;}
+div#map {
+    min-height: 360px;
+    width: 80%;
+    margin-left: 10%;
+    }
 
 element.style{
     background-color: #007bff;
