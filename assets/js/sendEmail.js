@@ -16,6 +16,12 @@ function sendMail(contactForm) {
         function(error) {
             console.log("FAILED", error);
         }
+    )
+    .then(
+        function resetForm(){
+    alert("Your message has been sent. Please allow up to 72 hours for a response.")
+    document.getElementById("myForm").reset();
+}
     );
     return false;  // To block from loading a new page
     

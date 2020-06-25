@@ -74,8 +74,8 @@
 			<div class="container main-container">
 				<div id="inside-content">
 					<h2 class="contact-us-h2">Contact Form</h2>
-<div class="container">
-<form class="needs-validation" onsubmit="return sendMail(this);" novalidate>
+<div class="container ">
+<form class="needs-validation" id="myForm" onsubmit="return sendMail(this);"  novalidate>
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">First name:</label>
@@ -151,7 +151,9 @@
   </div>
   </div>
   
-  <button class="btn btn-primary" type="submit">Submit form</button>
+  <button class="btn btn-primary" type="submit" id="submit"
+>Submit form</button>
+  
 </form>
 </div>
 
@@ -174,6 +176,8 @@
     });
   }, false);
 })();
+
+
 </script>
 					<div class="container-fluid">
 						<div class="row bg-color-contact">
