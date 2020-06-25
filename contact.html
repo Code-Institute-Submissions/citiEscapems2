@@ -74,20 +74,7 @@
 			<div class="container main-container">
 				<div id="inside-content">
 					<h2 class="contact-us-h2">Contact Form</h2>
-
-					<div class="container-fluid">
-						<div class="row bg-color-contact">
-							<div>
-								<h3 class="contact-heading uppercase text-center">Contact us form</h3>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    <div class="container">
+<div class="container">
 <form class="needs-validation" onsubmit="return sendMail(this);" novalidate>
   <div class="form-row">
     <div class="col-md-4 mb-3">
@@ -156,7 +143,7 @@
 
      <div class="form-group col-md-12">
     <label for="validationCustom05">Description:</label>
-    <textarea class="form-control" name="description" id="validationCustom05" placeholder="Please describe your query..." rows="5" required minlength=20></textarea>
+    <textarea class="form-control" name="description" id="validationCustom05" placeholder="Please describe your query..." rows="5" required minlength="20"></textarea>
     <small class="form-text text-muted">Minimum of 20 characters required</small>
     <div class="invalid-feedback">
           Please provide a detailed description explaining your issue. Must be at least 20 characters.
@@ -188,6 +175,15 @@
   }, false);
 })();
 </script>
+					<div class="container-fluid">
+						<div class="row bg-color-contact">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
 
 
 
