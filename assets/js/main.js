@@ -73,7 +73,7 @@ var locations = [
   {lat: 52.3667, lng: 4.8945}
   
 ]
-
+/*--------------------------------------------------------------------------------------------------------------------------Fade in & out function*/
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -90,4 +90,33 @@ $(window).on("load",function() {
     });
   }).scroll(); //invoke scroll-handlerpage-load
 });
-    
+
+
+var randomNumber = Math.floor(Math.random() * (myCity.length));
+if (randomNumber ===1){
+    console.log("Dublin");
+} else if(randomNumber===2){
+    console.log("Milan")
+} else if(randomNumber===3){
+    console.log("Berlin")
+} else if(randomNumber===4){
+    console.log("Paris")
+} else if(randomNumber===5){
+    console.log("Milan")
+} else if(randomNumber===6){
+    console.log("Milan")
+} else if(randomNumber===7){
+    console.log("Milan")
+} else if(randomNumber===8){
+    console.log("Milan")
+} else if(randomNumber===9){
+    console.log("Milan")
+} else if(randomNumber===10){
+    console.log("Milan")
+} else if(randomNumber===11){
+    console.log("Milan")
+} else if(randomNumber===12){
+    console.log("Milan")
+} else {
+    console.log("No holidays for you")
+}
