@@ -43,9 +43,9 @@ h5.light-switch{
     
 }
 /*--------------------------------------------------------------------------------------------background overlay container*/
-div.container{
+/*div.container{
     padding-top: 50px;
-}
+}*/
 
 div.container.main-container{
     background-color: rgba(0, 0, 0, 0.4);
@@ -58,8 +58,11 @@ div.container.main-container{
 div.container.contact-container{
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 25px;
+
     
 }
 /*-----------------------------------------------------------------------------------------------------------Parralax midpoint*/
@@ -146,6 +149,10 @@ a.nav-link{
 }
 
 
+hr{
+    margin-left: 10%;
+}
+
 .footer-hr{
     width: 90%;
     margin-top: 30px;
@@ -190,4 +197,32 @@ element.style{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*---------------------------------------------------------------------------------------------------Media Queries Contact Page*/
+
+@media only screen and (min-width: 600px) {
+  div.container.contact-container {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  div.container.contact-container {
+    max-height: 600px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  div.container.contact-container {
+    max-height: 550px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.container.contact-container {
+    max-height: 550px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  div.container.contact-container {
+    max-height: 770px;
+  }
 }
