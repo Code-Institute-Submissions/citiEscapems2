@@ -54,6 +54,14 @@ div.container.main-container{
     margin-top: 100px;
     
 }
+
+div.container.contact-container{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+}
 /*-----------------------------------------------------------------------------------------------------------Parralax midpoint*/
 
 #parallax-midpoint{
@@ -99,27 +107,7 @@ img.tile-img:hover{
 
 
 
-.cityTemplate h4 {
-  margin: 0 0 6px 0;
-}
 
-
-.city-name {
-  font-size: 2rem;
-  font-weight: normal;
-  
-}
-.tile-city, .tile-country{
-    text-align: center;
-    align-content: center;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    padding: 0 auto
-}
-
-.tile-city-h3{
-    text-align: center;
-}
 
 .country {
   font-size: 0.9rem;
@@ -157,9 +145,6 @@ a.nav-link{
     text-align: center;
 }
 
-div.col-md-3{
-    padding: 0;
-}
 
 .footer-hr{
     width: 90%;
@@ -198,4 +183,11 @@ div#map {
 
 element.style{
     background-color: #007bff;
+}
+
+.city-centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
