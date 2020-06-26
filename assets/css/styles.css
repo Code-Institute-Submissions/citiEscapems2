@@ -23,6 +23,16 @@ img {
     background-size: cover;
 }
 
+#hero-image-contact{
+    background-image: url("../img/hero-paris.jpg");
+    height: 800px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #sunset-btn{
     float: right;
 }
@@ -224,5 +234,46 @@ element.style{
 @media only screen and (min-width: 576px) {
   div.container.contact-container {
     max-height: 770px;
+  }
+}
+/*---------------------------------------------------------------------------------------------------Media Queries Index.html*/
+
+
+@media only screen and (min-width: 1200px) {
+  div.container.main-container {
+    max-height: 600px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  div.container.main-container {
+    max-height: 550px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.container.main-container {
+    max-height: 550px;
+  }
+  #hero-image{
+      height: 650px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  div.container.main-container {
+    max-height: 770px;
+    margin: 0 auto;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #hero-image{
+      height: 550px;
+  }
+}
+@media only screen and (min-width: 577px) {
+
+  #hero-image{
+      height: 650px;
   }
 }
