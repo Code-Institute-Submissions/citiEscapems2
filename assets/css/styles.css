@@ -204,13 +204,23 @@ element.style{
 
 /*---------------------------------------------------------------------------------------------------Fonts & Letter styling----*/
 
-h5{
+h5.tile-country{
+    text-align: -webkit-center;
+    margin-top: 15px;
+    margin-left: 1px;
+}
+
+h3.tile-city{
+    text-align: -webkit-center;
+    margin-left: 10;
+}
+
+h3.tile-heading{
+    
     text-align: -webkit-center;
 }
 
-h3{
-    text-align: -webkit-center;
-}
+
 /*---------------------------------------------------------------------------------------------------Media Queries Contact Page*/
 
 @media only screen and (min-width: 600px) {
@@ -258,6 +268,9 @@ h3{
   #hero-image{
       height: 650px;
   }
+  h3.tile-heading{
+    margin-left: 70px;
+}
 }
 @media only screen and (max-width: 576px) {
   div.container.main-container {
@@ -269,6 +282,14 @@ h3{
     padding-top: 10px;
     padding-bottom: 20px;
   }
+
+  img.tile-img{
+      margin-left: 10px;
+  }
+
+  h3, h5{
+      margin-left: 10px;
+  }
   #hero-image{
       height: 550px;
   }
@@ -278,4 +299,5 @@ h3{
   #hero-image{
       height: 650px;
   }
+  
 }
