@@ -103,7 +103,11 @@ $(".btn-map").click(function() {
         scrollTop: $("#map").offset().top},
         'slow');
 });
-
+$("#btn-city").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#cityTiles").offset().top},
+        'slow');
+});
 
 
 
