@@ -268,10 +268,8 @@ h3.tile-heading{
   #hero-image{
       height: 650px;
   }
-  h3.tile-heading{
-    margin-left: 70px;
 }
-}
+
 @media only screen and (max-width: 576px) {
   div.container.main-container {
     max-height: 770px;
@@ -299,5 +297,10 @@ h3.tile-heading{
   #hero-image{
       height: 650px;
   }
-  
+}
+
+/*--------------------------------------------------------------------------------------------------Infinite load styling*/
+
+.fade {
+  opacity: 1;
 }

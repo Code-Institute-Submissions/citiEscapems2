@@ -23,14 +23,12 @@ cityTile(myCity)
 
 		for (var i = 0; i < data.length; i++){
 			var tile = `<div class="col-sm-12 col-md-6 col-lg-3 mt-5">
-            <div class="container">
+            <div class="container fade">
                             <a href="#"><img class="tile-img" src="${data[i].img}" alt="Picture of ${data[i].name}"/></a>
 							<div class="city-centered"><h3 class="tile-city">${data[i].name}</h3></div>
 							<div class="bottom"><h5 class=tile-country>${data[i].country}</h5></div>
 					  </div>
-                      </div>
-                      
-                      `
+                      </div>`
 			table.innerHTML += tile
 		}
     }
@@ -70,7 +68,26 @@ var locations = [
   {lat: 50.0755, lng: 14.4378},
   {lat: 40.4168, lng: -3.7038},
   {lat: 38.7223, lng: -9.1393},
+  {lat: 47.3666, lng: 8.5500},
+  {lat: 52.2297, lng: 21.01220},
   {lat: 52.3667, lng: 4.8945}
   
 ]
+
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view once it intersects at a speed of 500ms and opacity of 1
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //on scroll up the element fades out at a speed of 500 ms to a 0 opacity
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handlerpage-load
+});
     
