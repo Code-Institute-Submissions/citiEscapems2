@@ -121,13 +121,6 @@ img.tile-img:hover{
 
 
 
-
-.country {
-  font-size: 0.9rem;
-  color: #888;
-  vertical-align: middle;
-}
-
 .attractions {
   margin: 0;
   padding: 0;
@@ -209,6 +202,15 @@ element.style{
     transform: translate(-50%, -50%);
 }
 
+/*---------------------------------------------------------------------------------------------------Fonts & Letter styling----*/
+
+h5{
+    text-align: -webkit-center;
+}
+
+h3{
+    text-align: -webkit-center;
+}
 /*---------------------------------------------------------------------------------------------------Media Queries Contact Page*/
 
 @media only screen and (min-width: 600px) {

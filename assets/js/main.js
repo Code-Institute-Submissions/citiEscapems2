@@ -9,6 +9,8 @@
         {'name':'Prague', 'img':'assets/img/prague.jpg', 'country':'Czechia'},
 	    {'name':'Madrid', 'img':'assets/img/madrid.jpg', 'country':'Spain'},
         {'name':'Amsterdam', 'img':'assets/img/amsterdam.jpg', 'country':'Holland'},
+        {'name':'Zurich', 'img':'assets/img/zurich.jpg', 'country':'Switzerland'},
+        {'name':'Warsaw', 'img':'assets/img/warsaw.jpg', 'country':'Poland'},
         {'name':'Lisbon', 'img':'assets/img/lisbon.jpg', 'country':'Portugal'}
 	]
 	
