@@ -32,46 +32,6 @@ function cityTile(data) {
   }
 }
 
-function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: { lat: 48.5785, lng: 14.9706 },
-  });
-
-  // Create an array of alphabetical characters used to label the markers.
-  var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-  // Add some markers to the map.
-  // Note: The code uses the JavaScript Array.prototype.map() method to
-  // create an array of markers based on a given "locations" array.
-  // The map() method here has nothing to do with the Google Maps API.
-  var markers = locations.map(function (location, i) {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
-  });
-
-  // Add a marker clusterer to manage the markers.
-  var markerCluster = new MarkerClusterer(map, markers, {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  });
-}
-var locations = [
-  { lat: 53.3498, lng: -6.2603 },
-  { lat: 51.5074, lng: -0.1278 },
-  { lat: 48.8566, lng: 2.3522 },
-  { lat: 45.4642, lng: 9.19 },
-  { lat: 48.2082, lng: 16.3738 },
-  { lat: 52.52, lng: 13.405 },
-  { lat: 50.0755, lng: 14.4378 },
-  { lat: 40.4168, lng: -3.7038 },
-  { lat: 38.7223, lng: -9.1393 },
-  { lat: 47.3666, lng: 8.55 },
-  { lat: 52.2297, lng: 21.0122 },
-  { lat: 52.3667, lng: 4.8945 },
-];
 /*--------------------------------------------------------------------------------------------------------------------------Fade in & out function*/
 $(window).on("load", function () {
   $(window)
@@ -108,34 +68,3 @@ $("#btn-city").click(function() {
         scrollTop: $("#cityTiles").offset().top},
         'slow');
 });
-
-
-
-/*
-cityTile(randomCity);
-
-function cityTile(data) {
-  var table = document.getElementById("cityTiles");
-
-var randomNumber = Math.floor(Math.random() * (myCity.length));
-}
-if (randomNumber ===1){
-    document.getElementById("cityGrid")
-    var randomDublin = 
-    `<div class=col-sm-12>
-    <img class="tile-img" src="${data[1].img}"
-     alt="Picture of ${data[i].name}"/></a>
-							<div class="city-centered"><h3 class="tile-city">${data[i].name}</h3></div>
-							<div class="bottom"><h5 class=tile-country>${data[i].country}</h5></div>
-    </div>`;
-    randomNumber.innerhtml += randomDublin;
-}
-*/
-    /*
-} else if(randomNumber===2){
-    console.log("Milan")
-} else {
-    console.log("No holidays for you")
-    scrollTo = $('#hero-image');
-}
-*/
