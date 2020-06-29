@@ -1,8 +1,8 @@
 /*--------------------------------------------------------------------------------------------------body*/
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", "sans-serif";
   background-color: white;
-  color: orange;
+  color: #007bff;
   padding: 0px 0 28px 0;
   margin: 0;
 }
@@ -48,10 +48,7 @@ img {
     background-size: cover;
 }
 
-h5.light-switch{
-    margin-top:  auto;
-    
-}
+
 /*--------------------------------------------------------------------------------------------background overlay container*/
 /*div.container{
     padding-top: 50px;
@@ -109,7 +106,7 @@ div.container.contact-container{
 
 img.tile-img{
     width: 350px;
-    border: orange solid 3px;
+    border: #007bff solid 3px;
     height: auto;
     margin-left: 30px;
     border-radius: 10px;
@@ -211,10 +208,15 @@ h5.tile-country{
 h3.tile-city{
     text-align: -webkit-center;
     margin-left: 10;
+    color: whitesmoke;
+}
+
+h3.tile-city:hover{
+    border-top: #007bff dotted 5px;
+    border-bottom: #007bff dotted 5px;
 }
 
 h3.tile-heading{
-    
     text-align: -webkit-center;
 }
 

@@ -47,7 +47,7 @@ for (i = 0; i < locations.length; i++)
         map.setCenter(marker.getPosition())
 
 
-        var content =  name + `</br>` + details + " " + `<a href="` + site + `"target="blank">visit here</a>`
+        var content = `<h3>` + name + `</h3>` + `</br>` + `<p>` + details + `</p>` + " " + `<a href="` + site + `"target="blank">visit here</a>`
 
   var infowindow = new google.maps.InfoWindow()
 
