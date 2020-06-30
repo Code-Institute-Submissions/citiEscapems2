@@ -13,8 +13,6 @@ var myCity = [
   { name: "Lisbon", img: "assets/img/lisbon.jpg", country: "Portugal" },
 ];
 
-const URL = "cities.json";
-
 cityTile(myCity);
 
 function cityTile(data) {
@@ -22,12 +20,12 @@ function cityTile(data) {
 
   for (var i = 0; i < data.length; i++) {
     var tile = `<div class="col-sm-12 col-md-6 col-lg-3 mt-5">
-            <div class="container fade">
-                            <a href="#"><img class="tile-img" src="${data[i].img}" alt="Picture of ${data[i].name}"/></a>
-							<div class="city-centered"><h3 class="tile-city">${data[i].name}</h3></div>
-							<div class="bottom"><h5 class=tile-country>${data[i].country}</h5></div>
-					  </div>
-                      </div>`;
+                    <div class="container fade">
+                        <a href="#"><img class="tile-img" src="${data[i].img}" alt="Picture of ${data[i].name}"/></a>
+					    <div class="city-centered"><h3 class="tile-city">${data[i].name}</h3></div>
+					    <div class="bottom"><h5 class=tile-country>${data[i].country}</h5></div>
+					</div>
+                </div>`;
     table.innerHTML += tile;
   }
 }

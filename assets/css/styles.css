@@ -138,6 +138,10 @@ footer{
     color: whitesmoke;
 }
 
+.social{
+    font-size: 25px;
+    margin-right: 5px;
+}
 div.row{
     max-width: 100%;
 }
