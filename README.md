@@ -8,7 +8,7 @@
 
   
   [Live Site](#)
-  [Repository](#)
+  [Repository](https://github.com/TheBigBushman/milestone-2)
 
 
 
