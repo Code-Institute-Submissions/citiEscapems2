@@ -48,7 +48,7 @@ Below the city's is a google-map that has a marker for each of the above city ti
 
 
 
-Wireframes created with Balsamiq. Project was developed from initial wireframes however changes were made to the final project outcome. Wireframe located in  [HERE](#).
+Wireframes created with Balsamiq. Project was developed from initial wireframes however changes were made to the final project outcome. Initially I was planning on a beach theme and package holidays but changed my plan throughout the project. Wireframe located in  [HERE](https://github.com/TheBigBushman/citiEscapems2/tree/master/assets/wireframe).
 
 ## Features
 
