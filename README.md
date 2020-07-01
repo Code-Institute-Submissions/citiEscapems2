@@ -99,7 +99,6 @@ The Owner wants to grow his brand from the ground up and is using targeted ads t
 
 ## Technologies Used
 
-**
 
 **HTML**
 
@@ -148,7 +147,6 @@ The Owner wants to grow his brand from the ground up and is using targeted ads t
 
 ## Testing
 
-**
 
 **Testing phase 1**
 >Initial testing of web page rendering on mobile and desktop showing an over lap on mobile most likely due to padding on the right of an element. This only seemed to affect index.html and not the contact page. 
@@ -243,7 +241,6 @@ The Owner wants to grow his brand from the ground up and is using targeted ads t
 | From the home page, navigate the website and send a message through the contact form. | 100% |
 |From the home page, book a flight from dublin to ibiza and tell me the website you are redirected to?|100%  |
 
-**
 
 >Testing on GTmetrix.com showed the Contact page has a speed score of A (93%), A fully load time of 3.6 seconds. Test server location: Vancouver, Canada using chrome.
 
