@@ -56,13 +56,19 @@ $(window).on("load", function () {
 });
 
 //Scrolling button on click from map in navbar to allow slowish scroll to map section
-$(".btn-map").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#map").offset().top},
-        'slow');
+$(".btn-map").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $("#map").offset().top,
+    },
+    "slow"
+  );
 });
-$("#btn-city").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#cityTiles").offset().top},
-        'slow');
+$("#btn-city").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $("#cityTiles").offset().top,
+    },
+    "slow"
+  );
 });

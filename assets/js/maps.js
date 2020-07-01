@@ -33,32 +33,30 @@ function initMap() {
 for (i = 0; i < locations.length; i++)
  {  
 
- var name = locations[i][0]
- var lat = locations[i][1]
- var long = locations[i][2]
- var details =  locations[i][3]
- var site = locations[i][4]
+    var name = locations[i][0]
+    var lat = locations[i][1]
+    var long = locations[i][2]
+    var details =  locations[i][3]
+    var site = locations[i][4]
 
- latlngset = new google.maps.LatLng(lat, long);
+        latlngset = new google.maps.LatLng(lat, long);
 
   var marker = new google.maps.Marker({  
           map: map, title: name , position: latlngset  
         });
-        map.setCenter(marker.getPosition())
+            map.setCenter(marker.getPosition())
 
 
         var content = `<h3>` + name + `</h3>` + `</br>` + `<p>` + details + `</p>` + " " + `<a href="` + site + `"target="blank">visit here</a>`
 
-  var infowindow = new google.maps.InfoWindow()
+        var infowindow = new google.maps.InfoWindow()
 
-google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
-        return function() {
-           infowindow.setContent(content);
-           infowindow.open(map,marker);
-        };
+        google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+            return function() {
+             infowindow.setContent(content);
+                infowindow.open(map,marker);
+                };
         
-    })(marker,content,infowindow)); 
-    
-
+            })(marker,content,infowindow)); 
   }
   }
