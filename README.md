@@ -7,8 +7,9 @@
 **This website is to provide users options and ideas about where to take short city breaks once leisure travel has been restored and to provide locations closer to home for people based in Ireland**
 
   
-  [Live Site](https://thebigbushman.github.io/citiEscapems2/)
-  [Repository](https://github.com/TheBigBushman/citiEscapems2)
+>[Live Site](https://thebigbushman.github.io/citiEscapems2/)
+  
+>[Repository](https://github.com/TheBigBushman/citiEscapems2)
 
 
 
