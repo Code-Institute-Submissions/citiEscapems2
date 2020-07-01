@@ -8,11 +8,19 @@
 
   
   [Live Site](#)
-  [Repository](https://github.com/TheBigBushman/milestone-2)
+  [Repository](#)
 
 
 
 ## UX
+
+CitiEscape was founded to bring users a resource to be able to view some information about close cities for people in the UK and Ireland to be able to visit once the lockdown in each respective country has lifted. A resource for people to find out something they do not already know and be taken to the specific tour page for a particular chosen city. 
+
+The color scheme was blue and white which is typical with travel and leisure travel branding. 
+
+The layout of the page is a long scroll and initially a lazy loading feature was going to pull the data from a JSON file to render the city tiles but instead I opted for a slow fade to present the city's in a similar effect. 
+
+Below the city's is a google-map that has a marker for each of the above city tiles. Once a user clicks on the marker the map will center over that city and display specific facts / data about the city and include a link to take the user to the city's tour page to look up more attractions and things to do. 
 
 
 
@@ -39,11 +47,7 @@
 
 
 
-Wireframes created with Balsamiq. Project was developed from initial wireframes however changes were made to the final project outcome. Wireframe located in <i>assets/img/wireframes/Emily7-milestone-wireframe.pdf</i> and you can find them [HERE](#).
-
-  
-
-
+Wireframes created with Balsamiq. Project was developed from initial wireframes however changes were made to the final project outcome. Wireframe located in  [HERE](#).
 
 ## Features
 
@@ -72,7 +76,7 @@ Navigation bar with logo font to the left followed by 4 options: Home, Flights, 
 
 **Socials**
 
-The Owner wants to grow his brand from the ground up and is using targeted ads to bring customers to his website.
+The Owner wants to grow his brand from the ground up and is using targeted ads to bring customers to his website. For now the socials are placeholders and do not lead to a specific page. 
 
   
 
@@ -112,11 +116,6 @@ The Owner wants to grow his brand from the ground up and is using targeted ads t
 
 >Provided useful components and layout features to create this website. Extremely powerful box grid system for developing websites with a responsive design.
 
-**[Unsplash](https://www.unsplash.com/)**
-
->A host of free photos used in this project from the hero image to the city tiles.
-
-
 **[w3Schools](https://www.w3schools.com/)**
 
 >Amazing library of full web framework components to pull from and assisted with understanding the structure of certain elements. Focused a lot on Jquery, JS, AJAX and some bootstrap / CSS elements.
@@ -128,10 +127,6 @@ The Owner wants to grow his brand from the ground up and is using targeted ads t
 **[Font Awesome](https://fontawesome.com/)**
 
 >Used this for icons and favicons for the likes of socials
-
-**[Animista](https://animista.net/)**
-
-
 
 **[Google Fonts](https://fonts.google.com/)**
 
@@ -145,41 +140,114 @@ The Owner wants to grow his brand from the ground up and is using targeted ads t
 
 >Used to create functionality and interactivity on my site and to implement API's
 
+**[Google maps API]([https://developers.google.com/maps/documentation](https://developers.google.com/maps/documentation))**
+
+>Used to create maps and to implement API
+
 
 ## Testing
 
 **
 
 **Testing phase 1**
+>Initial testing of web page rendering on mobile and desktop showing an over lap on mobile most likely due to padding on the right of an element. This only seemed to affect index.html and not the contact page. 
+--------
+**Testing on Chrome on handset mobile**
+| Test |Outcome  |
+|--|--|
+|Navigation links in dropdown navbar| Pass  |
+|User requested to navigate to contact page| Pass
+|User requested search for a flight using skyscanner widget api|Pass|
+|User requested to send e-mail via contact form|Fail  |
+|Link testing on all links on HTML  | Pass|
+|Link testing on all links on contact page|Pass|
+|Link testing on Googlemap markers |Pass |
+|Images displaying correctly|Fail  |
+|Fade in scripting working as expected on scroll|Pass|
+|Slide to scripting working as expected|Pass  |
 
 
+------------
+**Testing on Chrome on Desktop using 19" display**
+| Test |Outcome  |
+|--|--|
+|Navigation links in dropdown navbar| Pass  |
+|User requested to navigate to contact page| Pass
+|User requested search for a flight using skyscanner widget api|Pass|
+|User requested to send e-mail via contact form| Fail  |
+|Link testing on all links on HTML  | Pass|
+|Link testing on all links on contact page|Pass|
+|Link testing on Googlemap markers |Pass |
+|Images displaying correctly|Fail  |
+|Fade in scripting working as expected on scroll|Pass|
+|Slide to scripting working as expected|Pass  |
+
+
+
+
+
+------------
 **Testing Phase 2**
 
 
-**
+>**Same test samples as above except using internet explorer on mobile handset**
 
-**Testing Phase 3**
+| Test |Outcome  |
+|--|--|
+|Navigation links in dropdown navbar| Pass  |
+|User requested to navigate to contact page| Pass
+|User requested search for a flight using skyscanner widget api|Pass|
+|User requested to send e-mail via contact form|Pass  |
+|Link testing on all links on HTML  | Pass|
+|Link testing on all links on contact page|Pass|
+|Link testing on Googlemap markers |Pass |
+|Images displaying correctly|Pass  |
+|Fade in scripting working as expected on scroll|Pass|
+|Slide to scripting working as expected|Pass  |
+-------------
+>**Testing on Chrome on Desktop using 19" display**
 
-**
-Tested each individual webpage on https://validator.w3.org/ 
+| Test |Outcome  |
+|--|--|
+|Navigation links in dropdown navbar| Pass  |
+|User requested to navigate to contact page| Pass
+|User requested search for a flight using skyscanner widget api|Pass|
+|User requested to send e-mail via contact form| Pass |
+|Link testing on all links on HTML  | Pass|
+|Link testing on all links on contact page|Pass|
+|Link testing on Googlemap markers |Pass |
+|Images displaying correctly|Pass  |
+|Fade in scripting working as expected on scroll|Pass|
+|Slide to scripting working as expected|Pass  |
+----------------
+>**Tested each individual webpage on [w3.org](https://validator.w3.org/).**
+
+|Page|Result  |
+|--|--|
+|  Index| Pass (Only warnings related to comments showing)
+|Contact|Pass (No Errors or warning present)  |
+
  
 
+------------------------
+
+** Group Testing Phase **
+>Group testing was set out as a series of tasks to 5 individuals using different devices and a combination of browsers. These tests are to show usability and functionality that new users are able to navigate the site with ease. 
+
+>These tests are:
+
+|Test|Pass %  |
+|--|--|
+|  Navigate to milan on the map and click on to it's city tour webpage|100%  |
+| From the home page, navigate the website and send a message through the contact form. | 100% |
+|From the home page, book a flight from dublin to ibiza and tell me the website you are redirected to?|100%  |
+
 **
 
-**Testing Phase 4**
+>Testing on GTmetrix.com showed the Contact page has a speed score of A (93%), A fully load time of 3.6 seconds. Test server location: Vancouver, Canada using chrome.
 
-**
-
-
-Follow on testing from GTmetrix.com showed the page has a speed score of A (92%), A fully load time of 1.6seconds. Test server location: Vancouver, Canada using chrome.
-
-
-
-  
-|Scenario|--------------------------------------------------------------------------------------------|Result|
-
-
-
+>Testing on GTmetrix.com showed the Home page has a speed score of D (62%), A fully load time of 14.6 seconds. Test server location: Vancouver, Canada using chrome.
+**Long loading time seems to be attributed to large image files. Image files had been reduced already to combat this but it seems they had not been reduced enough at time of submission**
 
 ## **Bugs**
 
@@ -192,7 +260,6 @@ Follow on testing from GTmetrix.com showed the page has a speed score of A (92%)
 > Currently have issues with how the city name presents on the city tiles. It is not fixed but seems to slide between break points. On each size screen it seems to render fine but as you progress through them you can see the city name sliding out of center. 
 
 > Issue with google-map not showing data. Found the original issue to be an incorrect path. 
-
 
 ## Deployment
 
@@ -211,11 +278,11 @@ To deploy the project I followed these steps:
 
   
 
-**
+
 
 ## Credits
 
-**
+
 
 [**Codepen.io**](codepen.io)
 
@@ -241,23 +308,20 @@ To deploy the project I followed these steps:
 
 ## Content
 
-**
-
- [**Lorem Ipsum**](https://www.lipsum.com/)
->The Dummy text used on the website primarily on about.html is from.
-A really useful resource for adding in authentic looking language to give the impression of a functioning web page. 
 
 [**Unsplash**](https://www.unsplash.com/search/concert/)
 >All images from this site were taken from unsplash, a free open source site for sharing images.
-
-
+-------------
 
 ## Acknowledgements
 
-**
-Code Institute
-Nishant Kumar
-Unsplash
-Traversy Media
-Bootstrap Library
-Steve Griffith
+
+>Code Institute
+>Nishant Kumar
+>Unsplash
+>Traversy Media
+>Bootstrap Library
+>Steve Griffith
+
+
+
